@@ -8,7 +8,9 @@ export default function Form() {
     { txt: "Sport", id: uuidv4() },
     { txt: "Coder avec React", id: uuidv4() },
   ]);
-  console.log(dataArr.length);
+  // console.log(dataArr);
+  const lastItem = dataArr[dataArr.length - 1];
+  // console.log(lastItem);
 
   const [stateInput, setStateInput] = useState();
 
@@ -38,8 +40,15 @@ export default function Form() {
   };
 
   return (
-    <div className="test">
-      <h1>test {dataArr.lenght}</h1>
+    <div className="main-container">
+      <div className="blue-container">
+        <p className="task-left">
+          <span className="dataArrLenght">{dataArr.length} </span>TASKS LEFT
+        </p>
+        <p className="task-last">YOUR LAST TASK IS: {lastItem.txt}</p>
+        <p className="task-thank-you">Have a nice day Claire</p>
+      </div>
+
       <div className="m-auto px-4 col-12 col-sm-10 col-lg-6">
         <form onSubmit={(e) => addTodo(e)} className="mb-3">
           <label htmlFor="todo" className="form-label mt-3">

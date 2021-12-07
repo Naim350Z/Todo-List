@@ -1,6 +1,5 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Form from "../src/Components/form";
-import DynamicDiv from "../src/Components/dynamicDiv";
 import "./App.css";
 import Avatar from "./assets/avatar.jpeg";
 
@@ -17,7 +16,6 @@ function App() {
             <img src={Avatar} alt="Avatar" className="avatar" />
           </div>
         </div>
-        <DynamicDiv dyn={DynamicDiv.txt} />
         <Form />
       </div>
     </div>
