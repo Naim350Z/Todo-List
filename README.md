@@ -2,6 +2,8 @@
 
 This is a React project
 
+Find the todo here: https://naim350z.github.io/Todo-List/
+
 Avatar from: https://thispersondoesnotexist.com/
 
 # Getting Started with Create React App
